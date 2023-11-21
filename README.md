@@ -20,6 +20,8 @@
 
 Services wishing to request data can use the example code below to get started.
 
+[store_client.py](store_client.py)
+
 ```python
 class StoreClient:
 
