@@ -1,0 +1,12 @@
+{
+  "products": {
+    "red_delicious_apple": 0.49,
+    "fuji_apple": 0.59,
+    "honeycrisp_apple": 0.69,
+    "mandarin_orange": 0.59,
+    "blood_orange": 0.69,
+    "green_grapes": 2.99,
+    "red_grapes": 3.99,
+    "concord_grapes": 4.99
+  }
+}
