@@ -71,3 +71,6 @@ The response contains the data from the request.
 
 Use ```json.loads(response)``` to parse the response into a usable dictionary format.
 
+### UML Diagram for Usage
+
+![UMl Diagram](UMLDiagram.png)
