@@ -46,7 +46,7 @@ class StoreClient:
             self.response = body.decode()
 
     def call(self, product_str):
-        self.response = None
+        self.response = ""
         self.correlation_id = str(uuid.uuid4())
         self.channel.basic_publish(exchange="",
                                    routing_key="store_data_request",
@@ -64,12 +64,12 @@ If the client wants to request all products containing the string "apple", they 
 ```python
 store_client = StoreClient()
 response = store_client.call("apple")
-json = json.loads(response)
+json_str = json.loads(response)
 ```
 
-The response contains the data from the request.
+The response contains the data from the request as a json formatted string.
 
-Use ```json.loads(response)``` to parse the response into a usable dictionary format.
+Use ```json.loads(response)``` to parse the response into a usable Python list format.
 
 ### UML Diagram for Usage
 
