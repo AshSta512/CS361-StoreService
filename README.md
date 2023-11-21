@@ -64,7 +64,7 @@ If the client wants to request all products containing the string "apple", they 
 ```python
 store_client = StoreClient()
 response = store_client.call("apple")
-json_str = json.loads(response)
+product_list = json.loads(response)
 ```
 
 The response contains the data from the request as a json formatted string.
